@@ -47,11 +47,6 @@ client.on(Events.InteractionCreate, async interaction => {
     // you need to get the matching command from the client.commands Collection based on the interaction.commandName. Your Client instance is always available via interaction.client
 	const command = interaction.client.commands.get(interaction.commandName);
 
-	if (command === 'addPlayer' || command === 'updateTable' || command === 'showTable') {
-		await interaction.deferReply();
-		await wait(4_000);
-		await interaction.editReply('Pong!');
-	}
     //  If no matching command is found, log an error to the console and ignore the event.
 	if (!command) {
 		console.error(`No command matching ${interaction.commandName} was found.`);
