@@ -39,8 +39,12 @@ Displays the current standings of the tournament.
         "guildId": "YOUR_GUILD_ID"
     }
     ```
+    
 ## Usage
+
 After setting up your environment variables and installing the dependencies, you can start the bot using:
-    ```sh
+
+    
     node index.js
-    ```
+    
+
