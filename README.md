@@ -23,7 +23,7 @@ Displays the current standings of the tournament.
 1. Clone the repository:
     ```sh
     git clone <repository-url>
-    cd bot-ds
+    cd PesBot
     ```
 
 2. Install the dependencies:
@@ -39,10 +39,8 @@ Displays the current standings of the tournament.
         "guildId": "YOUR_GUILD_ID"
     }
     ```
-
-4. Create a `table.json` file in the root directory to store the tournament data:
-    ```json
-    {
-        "players": []
-    }
+## Usage
+After setting up your environment variables and installing the dependencies, you can start the bot using:
+    ```sh
+    node index.js
     ```
